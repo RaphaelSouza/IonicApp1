@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Lista</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-list *ngFor="let item of listaEmpregados">
+    <ion-item>
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <ion-chip>
+                <ion-avatar>
+                  <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y">
+                </ion-avatar>
+                <ion-label>{{item.employee_name}}</ion-label>
+                <ion-icon name="close-circle"></ion-icon>
+              </ion-chip>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col>
+                {{item.employee_salary}}
+            </ion-col>
+          </ion-row>
+      </ion-grid>
+    </ion-item>
+  </ion-list>
+
+</ion-content>

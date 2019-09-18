@@ -12,6 +12,7 @@ export class Tab1Page {
 
 
   async exibirAlerta() {
+    
     const alert = await this.alertController.create({
       header: 'Aula',
       subHeader: 'Aula 2',
